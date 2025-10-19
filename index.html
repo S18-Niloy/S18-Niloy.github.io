@@ -1,170 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soumik Deb Niloy - Machine Learning Engineer / </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            background-color: #1a73e8;
-            border-radius: 4px;
-        }
-        header nav a:hover {
-            background-color: #145bb1;
-        }
-        #profile-pic {
-            display: block;
-            margin: 20px auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        h1 {
-            text-align: center;
-        }
-        section {
-            background-color: #fff;
-            padding: 15px;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media only screen and (max-width: 600px) {
-            header nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soumik Deb Niloy — AI / ML Engineer</title>
+  <style>
+    :root{
+      --accent:#0b63b8;
+      --muted:#6b7280;
+      --bg:#f6f8fb;
+      --card:#fff;
+      --maxw:1100px;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+    }
+    html,body{margin:0;background:var(--bg);color:#0f172a;}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:28px;box-sizing:border-box;}
+    header{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-bottom:22px;}
+    .avatar{
+      width:140px;height:140px;border-radius:16px;overflow:hidden;
+      box-shadow:0 6px 20px rgba(16,24,40,0.08);
+      flex-shrink:0;
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover;}
+    .title h1{margin:0;font-size:28px;}
+    .title p{margin:6px 0 10px;color:var(--muted);}
+    .contact{display:flex;flex-wrap:wrap;gap:10px;font-size:14px;}
+    a.ct{color:var(--accent);text-decoration:none;}
+    .cv-button{
+      display:inline-block;margin-top:12px;padding:8px 14px;
+      background:var(--accent);color:#fff;border-radius:8px;
+      text-decoration:none;font-size:14px;
+    }
+    main{display:grid;grid-template-columns:1fr 360px;gap:24px;}
+    .card{background:var(--card);padding:18px;border-radius:12px;
+      box-shadow:0 8px 30px rgba(16,24,40,0.04);}
+    h2{margin:0 0 12px;font-size:16px;}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;}
+    .skill{background:#eef2ff;color:#0b3b82;padding:6px 8px;border-radius:8px;font-size:13px;}
+    .exp{display:flex;flex-direction:column;gap:12px;}
+    .exp-item{border-left:3px solid #e6eefb;padding:10px 12px;border-radius:6px;
+      background:linear-gradient(180deg,#fff,#fbfdff);}
+    .exp-item h3{margin:0;font-size:15px;}
+    .projects{display:grid;gap:12px;}
+    .proj{padding:12px;border-radius:8px;background:#fff;border:1px solid rgba(11,99,184,0.06);}
+    .proj .proj-title{display:flex;justify-content:space-between;align-items:center;}
+    .proj p{margin:8px 0 0;font-size:14px;line-height:1.45;}
+    .tags{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap;}
+    .tag{font-size:12px;background:#f3f4f6;padding:6px 8px;border-radius:6px;color:#374151;}
+    footer{margin-top:24px;text-align:center;font-size:13px;color:var(--muted);}
+    @media(max-width:900px){main{grid-template-columns:1fr;}}
+  </style>
 </head>
 <body>
+  <div class="wrap">
+    <header>
+      <!-- Profile photo -->
+      <div class="avatar">
+        <img src=".\portfolio.jpeg" alt="Soumik Deb Niloy">
+      </div>
 
-   
+      <div class="title">
+        <h1>Soumik Deb Niloy</h1>
+        <p>AI / ML Engineer · Research Assistant · NLP & Computational Biology</p>
+        <div class="contact">
+          <span>✉</span> <a class="ct" href="mailto:d19niloy@gmail.com">d19niloy@gmail.com</a> ·
+          <span>🔗</span> <a class="ct" href="https://linkedin.com/in/soumik-deb-niloy" target="_blank">LinkedIn</a> ·
+          <span>💻</span> <a class="ct" href="https://github.com/S18-Niloy" target="_blank">GitHub</a> ·
+          <span>📞</span> <a class="ct" href="tel:+8801796311815">+880 17963 11815</a>
+        </div>
+        <!-- Download CV button -->
+        <a class="cv-button" href="Soumik_Deb_Niloy_AI_Engineer.pdf" download>📄 Download CV</a>
+      </div>
+    </header>
 
-    <img id="profile-pic" src=".\niloy_cover.jpeg" alt="Soumik Deb Niloy Profile Picture">
+    <main>
+      <!-- LEFT -->
+      <div>
+        <div class="card">
+          <h2>About</h2>
+          <p>Research-driven AI/ML engineer focusing on deep learning and graph methods for biological data, medical imaging, and multilingual NLP. Experienced in PyTorch, TensorFlow, graph neural networks, and building end-to-end research prototypes.</p>
+          <p><small>Current: Research Assistant — BRAC University & Center for Computational and Data Sciences (2025–present)</small></p>
+        </div>
 
-    <h1>Soumik Deb Niloy</h1>
-    <p style="text-align:center;">Email: <a href="mailto:d19niloy@gmail.com">d19niloy@gmail.com</a></p>
-    <p style="text-align:center;">LinkedIn: <a href="https://linkedin.com/in/soumik-deb-niloy-22ab431a5/">linkedin.com/in/soumik-deb-niloy</a></p>
-    <p style="text-align:center;">GitHub: <a href="https://github.com/S18-Niloy">github.com/S18-Niloy</a></p>
+        <div class="card" style="margin-top:16px;">
+          <h2>Technical Skills</h2>
+          <div class="skills">
+            <span class="skill">Python</span><span class="skill">PyTorch</span><span class="skill">TensorFlow</span>
+            <span class="skill">PyTorch Geometric</span><span class="skill">Huggingface</span><span class="skill">OpenCV</span>
+            <span class="skill">Scikit-learn</span><span class="skill">LangChain</span>
+            <span class="skill">FAISS / Milvus</span><span class="skill">Docker / Git / LaTeX</span>
+          </div>
+        </div>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>B.Sc., Computer Science</strong><br>
-        BRAC University, Dhaka, Bangladesh<br></p>
-    </section>
+        <div class="card" style="margin-top:16px;">
+          <h2>Experience</h2>
+          <div class="exp">
+            <div class="exp-item">
+              <h3>Research Assistant — BRAC University</h3>
+              <p>Conducting AI/ML research on peptide classification, gene expression, and medical imaging using GNNs and deep learning frameworks.</p>
+            </div>
+            <div class="exp-item">
+              <h3>Research Assistant — IUB (CCDS)</h3>
+              <p>Developing computational models for biomedical and NLP data; conducting experiments and literature review for journal publication.</p>
+            </div>
+          </div>
+        </div>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>Research Assistant</strong><br>
-                Center for Computational & Data Sciences,Independent University, Dhaka (Feb 2025 - Ongoing)</li>
-            <li><strong>Natural Language Processing Engineer</strong><br>
-                Startup; Synteo.AI, Dhaka (Feb 2024 - Feb 2025)</li>
-            <li><strong>Contractual Programmer</strong><br>
-                Standard Group, Dhaka (June 2022 - December 2022)</li>
-            <li><strong>Machine Vision Engineer</strong><br>
-                Mongol-Tori, Mars Rover Team of BRACU (May 2021 – April 2022)</li>
-        </ul>
-    </section>
+        <div class="card" style="margin-top:16px;">
+          <h2>Projects</h2>
+          <div class="projects">
+            <div class="proj">
+              <div class="proj-title">
+                <strong>Customized EfficientLiteNetB0</strong><span class="muted">Hybrid CNN+Transformer</span>
+              </div>
+              <p>Lightweight model for video frame analysis (0.7 GFLOPs, 5 MB). Includes preprocessing, Grad-CAM visualization, and edge-device inference pipeline.</p>
+              <div class="tags"><span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">Grad-CAM</span></div>
+            </div>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Data Science Tools:</strong> NumPy, Pandas, Matplotlib, Keras, scikit-learn, PyTorch, TensorFlow, BERT, CV, Transformer</li>
-            <li><strong>Programming Languages:</strong> Python, Java, C, C#</li>
-            <li><strong>Frameworks:</strong> Flask, Dotnet, React.js, Node.js, MongoDB, MySQL, PostgreSQL, HTML, CSS</li>
-            <li><strong>Other Skills:</strong> Git, LaTeX, Web Scraping with BeautifulSoup</li>
-        </ul>
-    </section>
+            <div class="proj">
+              <div class="proj-title">
+                <strong>AI-Driven Financial Fraud Detection</strong><span class="muted">GNN · Neo4j</span>
+              </div>
+              <p>Transaction-graph GNN for fraud detection, real-time anomaly alerts, and explainability visualization in Neo4j.</p>
+              <div class="tags"><span class="tag">PyG</span><span class="tag">DGL</span><span class="tag">XGBoost</span></div>
+            </div>
 
-    
+            <div class="proj">
+              <div class="proj-title">
+                <strong>Second Brain — Personal Knowledge Curator</strong><span class="muted">RAG · Streamlit</span>
+              </div>
+              <p>Local pipeline that ingests PDFs/URLs, creates embeddings with SentenceTransformers, stores them in Chroma, and enables RAG queries via FastAPI.</p>
+              <div class="tags"><span class="tag">FastAPI</span><span class="tag">Chroma</span><span class="tag">SentenceTransformers</span></div>
+            </div>
 
-    <section id="personal-projects">
-        <h2>Personal Projects</h2>
-        <ul>
-            <li><strong>Web App For Twitter Hate Speech Recognition</strong><br>
-                Developed a streamlit app for hate speech detection model<br>
-                <a href="https://github.com/S18-Niloy/Hate_Speech_Recognition">GitHub Link</a>
-            </li>
-            <li><strong>Web App For Text Summerization</strong><br>
-                Developed a streamlit app for text summerization<br>
-                <a href="https://github.com/S18-Niloy/Automated_Text_Summerization">GitHub Link</a>
-            </li>
-            <li><strong>Signature App</strong><br>
-                The Django application checks if the extracted texts match, indicating whether the signatures are identical.<br>
-                <a href="https://github.com/S18-Niloy/SignatureApp">GitHub Link</a>
-            </li>
-            <li><strong>Segmentation of Vegetation Plot from Arial Images</strong><br>
-Segmentation of Vegetation Plots from Aerial Images: A Deep Learning Perspective <br>
-                <a href="https://github.com/S18-Niloy/Segmentation-of-Vegetation-Plot-from-Arial-Images">GitHub Link</a>
-            </li>
-            <li><strong>Car Info Extraction Using Regression</strong><br>
-                Developed a TensorFlow regression model for extracting car information.<br>
-                <a href="https://github.com/S18-Niloy/Car_info_extraction_using_regression">GitHub Link</a>
-            </li>
-            <li><strong>ERP Software using ASP.net MVC</strong><br>
-                Developing an ERP software<br>
-                <a href="https://github.com/S18-Niloy/ERP">GitHub Link</a>
-            </li>
-            <li><strong>Research paper management system</strong><br>
-                Developing an ERP software<br>
-                <a href="https://rpms-eta.vercel.app/">Link</a>
-            </li>
-        </ul>
-    </section>
+            <div class="proj">
+              <div class="proj-title">
+                <strong>Python Code Generation from Bangla</strong><span class="muted">LLM · Agentic System</span>
+              </div>
+              <p>Bangla instruction-to-Python generator/checker/debugger pipeline using local LLMs and prompt optimization.</p>
+              <div class="tags"><span class="tag">Ollama</span><span class="tag">Prompt Engineering</span></div>
+            </div>
 
-    
+            <div class="proj">
+              <div class="proj-title">
+                <strong>OCR — Handwritten Prescription</strong><span class="muted">PaddleOCR</span>
+              </div>
+              <p>Multilingual OCR system with post-processing for drug-name verification and web/mobile upload interface.</p>
+              <div class="tags"><span class="tag">PaddleOCR</span><span class="tag">NLP</span></div>
+            </div>
+          </div>
+        </div>
 
-    <section id="preprints">
-        <h2>Preprints & Thesis</h2>
-        <ul>
-            <li><strong>Federated Learning for Empowering Large Language Models</strong><br>
-                Preprint, Supervised by Mr. Annajiat Alim Rasel<br>
-                <a href="https://easychair.org/publications/preprint/LV6c">Preprint Link</a>
-            </li>
-            <li><strong>Hallucination Reduction in Large Language Models</strong><br>
-                Academic thesis supervised by Dr. Farig Yousuf Sadeque<br>
-                <a href="https://dspace.bracu.ac.bd/xmlui/handle/10361/22762">Thesis Link</a>
-            </li>
-        </ul>
-    </section>
+        <div class="card" style="margin-top:16px;">
+          <h2>Honors & Achievements</h2>
+          <ul style="margin:8px 0 0 18px;color:var(--muted);">
+            <li>5th Place — BLP Workshop 2025: Code Generation in Bengali (IJCNLP–AACL)</li>
+          </ul>
+        </div>
+      </div>
 
+      <!-- RIGHT -->
+      <aside>
+        <div class="card">
+          <h2>Education</h2>
+          <p>B.Sc. in Computer Science — BRAC University (2020–2024)</p>
+        </div>
 
+        <div class="card" style="margin-top:16px;">
+          <h2>Quick Links</h2>
+          <ul style="padding-left:18px;margin:8px 0 0;color:var(--muted);">
+            <li><a class="ct" href="https://github.com/S18-Niloy" target="_blank">GitHub — S18-Niloy</a></li>
+            <li><a class="ct" href="https://linkedin.com/in/soumik-deb-niloy" target="_blank">LinkedIn — Soumik Deb Niloy</a></li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h2>Contact</h2>
+          <p class="muted">Open to research collaborations, internships, or software engineering roles — feel free to connect.</p>
+          <p><a class="ct" href="mailto:d19niloy@gmail.com">d19niloy@gmail.com</a><br>
+             <a class="ct" href="tel:+8801796311815">+880 17963 11815</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © 2025 Soumik Deb Niloy · Portfolio Site
+    </footer>
+  </div>
 </body>
 </html>
